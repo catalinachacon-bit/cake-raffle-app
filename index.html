@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cake Raffle</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="raffle">
+    <h1>
+      <span class="material-icons" aria-hidden="true">cake</span>
+      Cake Raffle
+    </h1>
+
+    <form id="raffle-form">
+      <label for="name">Participant name</label>
+      <input id="name" type="text" placeholder="Enter a name" autocomplete="off" required>
+      <button class="enter-button" type="submit">Enter</button>
+    </form>
+
+    <section aria-labelledby="participants-heading">
+      <h2 id="participants-heading">Participants</h2>
+      <ul id="participant-list"></ul>
+    </section>
+
+    <div class="button-group">
+      <button id="draw-button" type="button">Draw</button>
+      <button id="reset-button" type="button">Reset</button>
+    </div>
+
+    <p id="winner" role="status"></p>
+  </main>
+</body>
+</html>

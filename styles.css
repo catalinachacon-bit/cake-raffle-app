@@ -1,0 +1,110 @@
+/* Include padding and borders inside each element's width. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background-color: #fce7f3;
+  color: #351342;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the card and let it shrink on phones. */
+.raffle {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(53, 19, 66, 0.15);
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+  color: #7e22ce;
+}
+
+h1 .material-icons {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #9c81b0;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #7e22ce;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #581c87;
+}
+
+.enter-button {
+  width: 100%;
+}
+
+/* Keep Draw and Reset side by side with a 10px gap. */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+}
+
+#reset-button {
+  background-color: #2563eb;
+}
+
+#reset-button:hover {
+  background-color: #1e40af;
+}
+
+/* Keep long names from overflowing the card. */
+#participant-list,
+#winner {
+  overflow-wrap: anywhere;
+}
+
+/* Add a background only when there's a message to show. */
+#winner:not(:empty) {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f3e8ff;
+  font-weight: bold;
+}
+
+:focus-visible {
+  outline: 3px solid #7e22ce;
+  outline-offset: 3px;
+}
